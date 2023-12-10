@@ -5,7 +5,7 @@ from elevenlabs import *
 from ObjectChar import *
 from mergeAudio import *
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="[YOUR KEY HERE]")
 
 background = """
     Limit the tokens for the response to 300 after the supplied beginning prompt.

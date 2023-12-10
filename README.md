@@ -1,35 +1,29 @@
 # Canvas Chronicles
 ## Summary
-Canvas Chronicles is a web application that allows users to create their own children stories with a simple picture. 
+Canvas Chronicles is an application that allows users to create their own children stories with a simple picture. 
 
-With out applicaiton, users simply can upload a picture of their choice. After that, the future of the story in hands of the AI!
+With our application, users simply can upload a picture of their choice. After that, the future of the story is in the hands of the AI!
 
-First our application picts through the image and find the objects in the image. Then, it gives each object a personality and creates a story based on the objects!
+First our application processes the image and find the objects in the image. Then, it gives each object a personality, a **voice**, and creates a story based on the objects!
 
-Try it out for yourself here! [Canvas Chronicles](canvaschronicles.netlify.app)
+This project originated out of BostonHacks 2023!
 
-##Extra Implementation
-There were some aspects of the project that we were not able to fully complete. Each individual character created was going to have their own voice based off of their personalities and genders. There are several examples 
+## Running the App
+You will need to have an account created with the following AI technologies for their respective APIs: [OpenAI](https://openai.com/blog/openai-api), [asticaVision](https://astica.ai/vision/documentation/), [ElevenLabs](https://elevenlabs.io/docs/api-reference/text-to-speech).
 
-of waveforms in the GitHub that show various audio clips that were AI generated for our characters. We also intended for the story to be interactive so kids can be a true part of the story. Instead, we hope that they are 
+For ElevenLab's voice AI, you will also need to have [ffmpeg](https://ffmpeg.org/download.html) installed.
 
-able to use their imaginations with the open-ended endings of the stories we created.
+Simply generate API keys for each service, and paste your keys into where it says `[YOUR KEY HERE]` in the `processImage.py`, `getStory.py`, and `getVoices.py` Python scripts.
 
+Finally, run the `main.py` script to execute the application! Have fun writing your story!
 
-## Inspiration
-After reading about the Digital Dreamers program, began to remis about the good old days of reading childrens books. We missed the adventure, suspense, and creativity that came with reading childrens books.
+## Project Inspiration
+After reading about the Digital Dreamers track (as part of BostonHacks 2023), we began to reminisce about the good old days of reading childrens books. We missed the adventure, suspense, and creativity that came with reading childrens books.
 
-We set out to bring back that feeling of adventure and creativity with our application. 
+We set out to bring back that feeling of adventure and creativity with our application.
 
 We wanted to create a platform where users could take simple pictures with generatic object and turn them into magnificent stories.
 
 We hope you love our application as much as we do!
 
 If you have any suggestions, please feel free to reach out to us!
-
-
-## Technologies/APIs Used
-OpenAI, AsticaAI Vision, ElevenLabs Voice-Generation AI, FireBase Storage and Realtime Database, Netlify, React, Flask, Python
-
-
-
