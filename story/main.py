@@ -9,14 +9,15 @@ from ObjectChar import *    # Objects' class
 
 finalizedChars = []         # An array to store the characters into the ObjectChar class
 
-def processImage():
+def main():
     '''Take the user-inputted image and generate characters as well as a beginning context'''
-    #charsAndContext = genCharAndContext() (currently sampleOutput)#main()  
-    sampleOutput = main()
+    #print("entered finalizeCharacters in main.py")
+    charsAndContext = processImage()
+    # sampleOutput = main()
     
-    sampleOutput = sampleOutput.strip()
+    charsAndContext = charsAndContext.strip()
     # Partition the output for just the characters
-    partitionedOutput = sampleOutput.partition("Beginning Prompt")
+    partitionedOutput = charsAndContext.partition("Beginning Prompt")
     characters = partitionedOutput[0]
     plot = partitionedOutput[2]
 
@@ -32,23 +33,23 @@ def processImage():
         finalizedChars[characterCount].voice = assignCharVoice(finalizedChars[characterCount])
         characterCount+=1
 
-    # Print the current character's attributes and have the character introduce themself
+    # Print the current character's attributes and have the character introduce themselves
     for character in finalizedChars:
         assignCharVoice(character)
         #Uncomment when voice is wanted
-        '''testAudio = generate(
+        testAudio = generate(
             text = f"Hi! My name is {character.name}. It is a pleasure to meet you!",
             voice = character.voice.name
         )
-        play(testAudio)'''
+        print(f"Hi! My name is {character.name}. It is a pleasure to meet you!")
+        play(testAudio)
 
-    generateStory(finalizedChars,sampleOutput)
+    generateStory(finalizedChars,plot)
         
 if __name__ == "__main__":
     start = time.time()
 
-    processImage()
-    generateStory(finalizedChars)
+    main()
 
     end = time.time()
-    print(end - start,"seconds")
+    print(end - start,"seconds elapsed.")

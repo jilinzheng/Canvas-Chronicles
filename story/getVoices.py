@@ -1,17 +1,11 @@
-import os
-from openai import OpenAI
-
 from ObjectChar import *
 # Voice/Narration; Note: Need to install ffmpeg
 from elevenlabs import set_api_key
 from elevenlabs import voices
-#from elevenlabs import generate
-#from elevenlabs import play
 import random
 
 # Set API Keys
-client = OpenAI(api_key="[YOUR KEY HERE]")
-set_api_key("[YOUR KEY HERE]")
+set_api_key("cbf347afc06326009118b58a7332ee59")
 
 # Save the voices available to use via the ElevenLabs API
 voices = voices() 
@@ -23,8 +17,6 @@ for voice in voices:
         maleVoices.append(voice)
     else:
         femaleVoices.append(voice)
-#print(maleVoices)
-#print(femaleVoices)
 
 def selectVoice(charGender):
     '''Randomly return a gender-specific voice out of available voices'''
