@@ -5,7 +5,7 @@ from elevenlabs import voices
 import random
 
 # Set API Keys
-set_api_key("cbf347afc06326009118b58a7332ee59")
+set_api_key("YOUR KEY HERE")
 
 # Save the voices available to use via the ElevenLabs API
 voices = voices() 
