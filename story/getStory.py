@@ -4,7 +4,7 @@ from getVoices import *
 from elevenlabs import *
 from ObjectChar import *
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="YOUR KEY HERE")
 
 background = """
     Limit the tokens for the response to 300 after the supplied beginning prompt.
