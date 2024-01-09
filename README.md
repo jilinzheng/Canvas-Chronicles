@@ -13,7 +13,7 @@ Simply generate API keys for each service, clone this repo, and paste your keys 
 
 Finally, run the `main.py` script to execute the application! Have fun writing your story!
 
-## [Demo Video](https://youtu.be/ofC4NujWLWE)
+## [Demo Video](https://youtu.be/ofC4NujWLWE){:target="_blank"}
 
 ## Known Issues
 - ChatGPT sometimes generates new characters, which are unaccounted for and thus break the script
